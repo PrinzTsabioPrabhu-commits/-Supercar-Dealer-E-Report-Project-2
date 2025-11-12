@@ -1,0 +1,46 @@
+ /* Custom Styling untuk E-Report Dealer Supercar */
+
+/* Body dan Background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Light grey background */
+}
+
+/* Login Page Styling */
+.login-body {
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Blue gradient for elegance */
+}
+.login-body .card {
+    border: none;
+    border-radius: 1rem;
+}
+
+/* Kerapian Tombol (Bootstrap sudah membantu, ini penambahan untuk Pill shape) */
+.btn-lg, .btn-primary, .btn-outline-secondary {
+    border-radius: 50rem !important; /* Membuat tombol lebih rapih dan berbentuk pill */
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+}
+
+/* Tabel Styling */
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.car-thumbnail {
+    width: 80px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Card Header Colors */
+.card-header {
+    font-weight: bold;
+    border-radius: 0.5rem 0.5rem 0 0 !important;
+}
