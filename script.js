@@ -68,7 +68,7 @@ function handleLogin(event) {
 
 function logout() {
     localStorage.removeItem('isLoggedIn');
-    window.location.href = 'indexx.html';
+    window.location.href = 'index.html';
 }
 
 // --- Fungsi CRUD (Create, Read, Update, Delete) ---
