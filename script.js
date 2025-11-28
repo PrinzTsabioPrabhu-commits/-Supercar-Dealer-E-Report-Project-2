@@ -22,14 +22,14 @@ const saveCars = (cars) => {
 
 function checkLogin() {
     const loggedIn = localStorage.getItem('isLoggedIn') === 'true';
-    const isDashboard = window.location.pathname.includes('dashboard.html');
-    const isLogin = window.location.pathname.includes('login.html');
+    const isDashboard = window.location.pathname.includes('indexxx.html');
+    const isLogin = window.location.pathname.includes('indexx.html');
 
     if (isDashboard && !loggedIn) {
-        window.location.href = 'login.html'; // Redirect ke login jika belum login
+        window.location.href = 'indexx.html'; // Redirect ke login jika belum login
     }
     if (isLogin && loggedIn) {
-        window.location.href = 'dashboard.html'; // Redirect ke dashboard jika sudah login
+        window.location.href = 'indexxx.html'; // Redirect ke dashboard jika sudah login
     }
     // Hanya render data dan chart jika di dashboard dan sudah login
     if (isDashboard && loggedIn) {
@@ -59,7 +59,7 @@ function handleLogin(event) {
 
     if (username === ADMIN_USER && password === ADMIN_PASS) {
         localStorage.setItem('isLoggedIn', 'true');
-        window.location.href = 'dashboard.html';
+        window.location.href = 'indexxx.html';
     } else {
         message.textContent = 'Username atau password salah.';
         message.classList.remove('d-none');
@@ -68,7 +68,7 @@ function handleLogin(event) {
 
 function logout() {
     localStorage.removeItem('isLoggedIn');
-    window.location.href = 'login.html';
+    window.location.href = 'indexx.html';
 }
 
 // --- Fungsi CRUD (Create, Read, Update, Delete) ---
